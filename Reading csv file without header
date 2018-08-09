@@ -19,10 +19,8 @@ object CSVDatasetWithoutHeader {
 
     val sqlContext = sparkSession.sqlContext
 
-    val numSlices = 4
-
     val path = "E:\\Hadoop\\learning\\hadoop\\data-master\\data\\retail_db\\orders\\orders.txt"
-    val minPartitions = 200
+    val minPartitions = 4
 
     val schema = StructType(
       StructField("order_id", IntegerType, false) ::
