@@ -38,7 +38,9 @@ object CSVDatasetWithoutHeader2 {
         StructField("order_status", StringType, false)
     ))
         
-    val ordersDF = sqlContext.read.schema(schema).csv(path)
+    val ordersDF = sqlContext.read.schema(schema)
+    .option("delimiter",",")
+    .csv(path)
     
     ordersDF.createOrReplaceTempView("order")
 
