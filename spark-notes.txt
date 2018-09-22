@@ -1,0 +1,39 @@
+What is RDD?
+1. Distributed data abstraction
+2. Resillient & Immutable
+3. Unstructure & Structure Data
+4. Compile time type-safe
+5. Lazy : when action is perform it will execute DAG.
+
+Why use RDD?
+1. offer Control & Flexibility
+2. low level API
+3. Type safe
+4. Encourage how-to
+
+When to use RDD?
+1. low-level API & control dataset
+2. Dealing with unstructured data(media stream & texts)
+3. manipulate data with lambda function than DSL(Domain specific language)  
+4. Don't care schema or structure of data
+5. Sacrifice optimization , performance and inefficiencies 
+
+What's the problem?
+1. Express how-to solution, not what-to
+2. not optimized by spark
+3. slow for non-JVM language like python
+4. inadverdent inefficiencies 
+
+
+Therefore Structure in spark comes in picture as Dataframe and Dataset API
+
+Why to use Dataset & Dataframe
+1. High level API and DSL
+2. Strong Type-safe
+3. Ease-of-use & Readability
+4. What-to-do
+
+When to use Dataset & Dataframe
+1. Structure Data Schema
+2. code optimization & performance 
+3. Space efficiency with Tungsten
